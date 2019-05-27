@@ -1,0 +1,14 @@
+a[href^="http"] {
+    color:  #4CAF50;
+}
+
+a[href*="google"] {
+    color:  #666;
+}
+
+a[target="_blank"]::after {
+    content: " \21F1\00a0";
+    display: inline-block;
+    text-decoration: none;
+    transform: scaleX(-1);
+}

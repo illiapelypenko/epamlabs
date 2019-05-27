@@ -1,0 +1,57 @@
+h1 {
+    text-align: end;
+    color: rgb(255, 166, 0);
+}
+
+#allotment h2 {
+    color: rgb(255, 166, 0);
+}
+
+#warehouse h2 {
+    color: #3E46FF;
+}
+
+em {
+    background: green;
+    color: white;
+    text-decoration: wavy;
+}
+
+p::first-letter { 
+    font-size: 200%;
+    color: red;
+}
+
+ul > li {
+    font-weight: bold;
+}
+
+ul > li > ol {
+    font-weight: normal;
+}
+
+ul > li:last-child > ol {
+    color: red;
+}
+
+div:first-of-type > ul > li:first-child > ol {
+    color: grey;
+}
+
+div:last-of-type > ul > li:first-child > ol {
+    color: green;
+}
+
+thead {
+    font-weight: bold;
+}
+
+tbody tr td {
+    color: white;
+    background-color: green;
+}
+
+tbody tr td:first-child {
+    color: rgb(255, 166, 0);
+    background-color: white;
+}

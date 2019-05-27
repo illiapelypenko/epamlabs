@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+	<title>lab3_5</title>
+    <link rel="stylesheet" href="lab3_task_6.css">	
+</head>
+<body>
+    <label for="junior">Молодший спеціаліст</label>
+    <input type="checkbox" id="junior" checked>
+    <label for="middle">Спеціаліст</label>
+    <input type="checkbox" id="middle" checked>
+    <label for="senior">Старший спеціаліст</label>
+    <input type="checkbox" id="senior" checked>
+
+    <br>
+
+    <label for="workdays">Будні</label>
+    <input type="checkbox" id="workdays" checked>
+    <label for="weekends">Вихідні</label>
+    <input type="checkbox" id="weekends" checked>
+
+    <br>
+
+    <label for="firsthalf">Перша половина дня</label>
+    <input type="checkbox" id="firsthalf" checked>
+    <label for="secondhalf">Друга половина дня</label>
+    <input type="checkbox" id="secondhalf" checked>
+
+    <br>
+    <br>
+
+    <label for="search">Пошук:</label>
+    <input type="input" id="search">
+
+    <br>
+    <br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Спеціальність</th>
+                <th>ПІБ</th>
+                <th>Рівень фахівця</th>
+                <th>Номер кабінету</th>
+                <th>Години прийому</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 1 -->
+            <tr  class="junior weekends firsthalf"> 
+                <td>Хірург</td>
+                <td>Іван Іваненко Іванович</td>
+                <td>Молодший спеціаліст</td>
+                <td>100</td>
+                <td>6-15</td>
+            </tr>
+            <!-- 2 -->
+            <tr  class="middle workdays secondhalf"> 
+                <td>Хірург</td>
+                <td>Василь Васильченко Васильович</td>
+                <td>Спеціаліст</td>
+                <td>101</td>
+                <td>15-20</td>
+            </tr>
+            <!-- 3 -->
+            <tr  class="senior weekends secondhalf"> 
+                <td>Хірург</td>
+                <td>Степан Степанченко Степанович</td>
+                <td>Старший спеціаліст</td>
+                <td>102</td>
+                <td>15-20</td>
+            </tr>
+            <!-- 4 -->
+            <tr  class="junior workdays firsthalf"> 
+                <td>Ортодонт</td>
+                <td>Олег Олегченко Олегович</td>
+                <td>Молодший спеціаліст</td>
+                <td>234</td>
+                <td>6-15</td>
+            </tr>
+            <!-- 5 -->
+            <tr  class="middle workdays secondhalf"> 
+                <td>Ортодонт</td>
+                <td>Миколай Миколайченко Миколайович</td>
+                <td>Спеціаліст</td>
+                <td>652</td>
+                <td>15-20</td>
+            </tr>
+            <!-- 6 -->
+            <tr  class="senior weekends firsthalf"> 
+                <td>Ортодонт</td>
+                <td>Андрій Андрійченко Андрійович</td>
+                <td>Старший спеціаліст</td>
+                <td>333</td>
+                <td>6-15</td>
+            </tr>
+            <!-- 7 -->
+            <tr  class="junior workdays secondhalf"> 
+                <td>Окуліст</td>
+                <td>Олесь Олесенко Олесевич</td>
+                <td>Молодший спеціаліст</td>
+                <td>546</td>
+                <td>15-20</td>
+            </tr>
+            <!-- 8 -->
+            <tr  class="middle weekends firsthalf"> 
+                <td>Окуліст</td>
+                <td>Максим Максименко Максимович</td>
+                <td>Спеціаліст</td>
+                <td>324</td>
+                <td>6-15</td>
+            </tr>
+            <!-- 9 -->
+            <tr  class="senior weekends firsthalf"> 
+                <td>Окуліст</td>
+                <td>Генадій Генадченко Генадійович</td>
+                <td>Старший спеціаліст</td>
+                <td>879</td>
+                <td>6-15</td>
+            </tr>
+            <!-- 10 -->
+            <tr  class="junior workdays secondhalf"> 
+                <td>Ортопед</td>
+                <td>Илля Илльенко Илліч</td>
+                <td>Молодший спеціаліст</td>
+                <td>543</td>
+                <td>15-20</td>
+            </tr>
+            <!-- 11 -->
+            <tr  class="middle weekends secondhalf"> 
+                <td>Ортопед</td>
+                <td>Анатолій Анатоленко Анатольович</td>
+                <td>Спеціаліст</td>
+                <td>134</td>
+                <td>15-20</td>
+            </tr>
+            <!-- 12 -->
+            <tr  class="senior weekends firsthalf"> 
+                <td>Ортопед</td>
+                <td>Петро Петренко Петрович</td>
+                <td>Старший спеціаліст</td>
+                <td>876</td>
+                <td>6-15</td>
+            </tr>
+            <!-- 13 -->
+            <tr  class="junior workdays firsthalf"> 
+                <td>Стоматолог</td>
+                <td>Вячислав Вячиславенко Вячиславович</td>
+                <td>Молодший спеціаліст</td>
+                <td>111</td>
+                <td>6-15</td>
+            </tr>
+            <!-- 14 -->
+            <tr  class="middle weekends secondhalf"> 
+                <td>Стоматолог</td>
+                <td>Владислав Владиславченко Владиславович</td>
+                <td>Спеціаліст</td>
+                <td>222</td>
+                <td>15-20</td>
+            </tr>
+            <!-- 15 -->
+            <tr  class="senior workdays firsthalf"> 
+                <td>Стоматолог</td>
+                <td>Микита Микитенко Микитович</td>
+                <td>Старший спеціаліст</td>
+                <td>333</td>
+                <td>6-15</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <form>
+        <label for="number">Phone number:</label> <br>
+        <input type="number" required id="number" placeholder="+380959382233"> <br> <br>
+        <label for="email">Email:</label> <br>
+        <input type="email" required id="email" placeholder="email@email.email"> <br> <br>
+        <input type="submit" value="«Надіслати дані на телефон».">
+    </form>
+</body>
+</html>

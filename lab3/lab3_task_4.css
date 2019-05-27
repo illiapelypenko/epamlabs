@@ -1,0 +1,7 @@
+tr:nth-child(2n){
+    background: lightblue;
+}
+
+td:nth-child(2n+3){
+    background: #F2F2DE;
+}

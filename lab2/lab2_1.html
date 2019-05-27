@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lab2_1</title>
+    <style>
+        select {
+            height: 160px;
+        }
+
+        .multiple-select-title {
+            font-weight: bold;
+        }
+
+        .multiple-select-item {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <!-- name -->
+        <label for="name">Name</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="Your Name" />
+        <br>
+        <br>
+
+        <!-- email -->
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="Your email" />
+        <br>
+        <br>
+
+        <!-- sex -->
+        <label>Sex</label>
+        <br>
+        <input type="radio" name="sex" value="Male" checked /> Male
+        <input type="radio" name="sex" value="Female" /> Female
+        <br>
+        <br>
+
+        <!-- Current status -->
+        <label>Current status</label>
+        <br>
+        <input type="checkbox" name="status" value="Student" />
+        Student <br>
+        <input type="checkbox" name="status" value="Employed" />
+        Employed <br>
+        <input type="checkbox" name="status" value="Unemployed" />
+        Unemployed
+        <br>
+        <br>
+
+        <!-- Birthday -->
+        <label for="birthday">Birthday</label>
+        <br>
+        <input type="date" name="birthday" id="birthday" />
+        <br>
+        <br>
+
+        <!-- Skills and Technologies -->
+        <label for="skills">Skills and Technologies</label>
+        <br>
+        <select name="skills" id="skills" multiple>
+            <!-- tech skills -->
+            <option class="multiple-select-title">Tech skills</option>
+            <option class="multiple-select-item" value="HTML">HTML</option>
+            <option class="multiple-select-item" value="CSS">CSS</option>
+            <option class="multiple-select-item" value="JavaScript">JavaScript</option>
+            <option class="multiple-select-item" value="ASP.NET">ASP.NET</option>
+            <option class="multiple-select-item" value="PHP">PHP</option>
+            <!-- soft skills -->
+            <option class="multiple-select-title">Soft skills</option>
+            <option class="multiple-select-item" value="time-managment">Time managment</option>
+            <option class="multiple-select-item" value="proactivity">Proactivity</option>
+            <option class="multiple-select-item" value="teamwork">Teamwork</option>
+            <option class="multiple-select-item" value="leadership">Leadership</option>
+        </select>
+        <br>
+        <br>
+
+        <!-- Photo -->
+        <label for="photo">Photo</label>
+        <br>
+        <input type="file" id="photo" name="photo" accept="image/*">
+        <br>
+        <br>
+
+        <!-- Comments -->
+        <label for="comments">Comments</label>
+        <br>
+        <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+        <br>
+        <br>
+
+        <!-- buttons -->
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Скинути">
+    </form>
+</body>
+
+</html>

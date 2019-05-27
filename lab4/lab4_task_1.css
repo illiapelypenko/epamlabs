@@ -1,0 +1,81 @@
+p {
+    margin: 25px;
+}
+
+/* ------------------------- */
+
+p:nth-of-type(1) {
+    font-size: 80px;
+    letter-spacing: 100px;
+}
+
+p:nth-of-type(2) {
+    font-size: 70px;
+    letter-spacing: 37px;
+}
+
+p:nth-of-type(3) {
+    font-size: 60px;
+    letter-spacing: 17px;
+}
+
+/* ------------5------------- */
+
+p:nth-of-type(4) {
+    font-size: 50px;
+    letter-spacing: 13px;
+}
+
+p:nth-of-type(5) {
+    font-size: 40px;
+    letter-spacing: 19px;
+}
+
+/* ------------6------------- */
+
+p:nth-of-type(6) {
+    font-size: 32px;
+    letter-spacing: 16px;
+}
+
+p:nth-of-type(7) {
+    font-size: 28px;
+    letter-spacing: 18px;
+}
+
+/* ------------7------------- */
+
+p:nth-of-type(8) {
+    font-size: 23px;
+    letter-spacing: 15px;
+}
+
+p:nth-of-type(9) {
+    font-size: 14px;
+    letter-spacing: 20px;
+}
+
+p:nth-of-type(10) {
+    font-size: 11px;
+    letter-spacing: 18px;
+}
+
+/* ------------line------------- */
+
+.uline {
+    height: 1px;
+    background: red;
+    width: 365px;
+}
+
+/* ------------line------------- */
+
+p:nth-of-type(11) {
+    font-size: 8px;
+    letter-spacing: 19px;
+}
+
+p:nth-of-type(12) {
+    font-size: 6px;
+    letter-spacing: 20px;
+}

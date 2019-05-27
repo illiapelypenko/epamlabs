@@ -1,0 +1,87 @@
+input:invalid ~ input[type="submit"] {
+    display: none;
+}
+
+table {
+    border-collapse: collapse;
+    overflow: hidden;
+    position: relative;
+}
+
+thead th::before {
+    content: "";
+    background: yellow;
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+tr:hover {
+    background: lightgreen;
+    cursor: pointer;
+}
+
+td, th {
+    border: 1px #000 solid;
+    position: relative;
+    padding: 5px;
+}
+
+th:hover::after, td:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: -100vh;
+    height: 200vh;
+    background: lightgreen;
+    z-index: -1;
+    left: 0;
+}
+
+tr:nth-child(odd) td::before {
+    content: "";
+    background: deepskyblue;
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+input[id="junior"]:not(:checked) ~ table tr.junior {
+    display: none;
+}
+
+input[id="middle"]:not(:checked) ~ table tr.middle {
+    display: none;
+}
+
+input[id="senior"]:not(:checked) ~ table tr.senior {
+    display: none;
+}
+
+input[id="weekends"]:not(:checked) ~ table tr.weekends {
+    display: none;
+}
+
+input[id="workdays"]:not(:checked) ~ table tr.workdays {
+    display: none;
+}
+
+input[id="firsthalf"]:not(:checked) ~ table tr.firsthalf {
+    display: none;
+}
+
+input[id="secondhalf"]:not(:checked) ~ table tr.secondhalf {
+    display: none;
+}
+
+/* NOT WORKING? */
+
+input[value="junior"] {
+    font-size: 5px;
+}
