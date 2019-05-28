@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.stars {
+    cursor: pointer;
+    font-size: 0px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: inline-block;
+}
+
+.star {
+    width: 25px;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.star::before {
+    content: "\2606";
+    color: lightskyblue;
+}
+
+.star:hover::before,
+.star:hover ~ .star::before {
+    content: "\2605";
+    color: gold;
+}
