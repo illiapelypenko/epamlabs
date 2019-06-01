@@ -11,7 +11,8 @@
 }
 
 .pages {
-    margin: 50px auto;
+    margin: 0px auto;
+    padding: 50px;
     width: max-content;
 }
 
@@ -29,24 +30,86 @@
 
 .cake:hover {
     position: absolute;
-    top: -15px;
-    left: -15px;
+    top: -30px;
+    left: -25px;
     width: 250px;
     padding: 15px;
-    border: 1px solid black;
     z-index: 2;
+    border: 1px #f0f0f0 solid;
+    box-shadow: 5px 5px 10px #909090;
 }
 
 .info {
     display: none;
-    background: lightslategrey;
+    background: #f4f4f4;
+}
+
+.name {
+    text-decoration: underline;
+    color: cornflowerblue;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+
+a:visited {
+    color: cornflowerblue;
+}
+
+.description {
+    padding-left: 10px;
 }
 
 .cake:hover .info {
     display: block;
 }
 
-img {
+.inner-img {
     width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.outer-img {
+    display: none;
+}
+
+.img-input {
+    display: none;
+}
+
+.img-input:checked + .outer-img {
+    display: block;
+    position: absolute;
+    background: rgba(61, 74, 119, 0.75);
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+}
+
+.img-input:checked + .outer-img img {
+    margin: 0px auto;
+    display: block;
+    padding-top: 10%;
+}
+
+.outer-label {
+    position: absolute;
+    z-index: 4;
+    display: none;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.outer-label:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.img-input:checked + .outer-img .outer-label {
     display: block;
 }
