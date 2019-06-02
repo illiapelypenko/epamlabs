@@ -113,3 +113,35 @@ a:visited {
 .img-input:checked + .outer-img .outer-label {
     display: block;
 }
+
+/* inputs/pages */
+
+.radio-page {
+    position: relative;
+    top: 260px;
+    left: 47.3%;
+}
+
+.page {
+    display: none;
+}
+
+#radio-page-1:checked ~ .pages .page1 {
+    display: block;
+}
+
+#radio-page-2:checked ~ .pages .page2 {
+    display: block;
+}
+
+#radio-page-3:checked ~ .pages .page3 {
+    display: block;
+}
+
+#radio-page-4:checked ~ .pages .page4 {
+    display: block;
+}
+
+#radio-page-5:checked ~ .pages .page5 {
+    display: block;
+}
