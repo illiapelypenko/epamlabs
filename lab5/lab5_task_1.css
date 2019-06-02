@@ -129,6 +129,7 @@ input#inlines:checked ~ .cards .card {
 input#inlines:checked ~ .cards .card > div {
     display: inline-block;
     margin-right: 25px;
+    vertical-align: top;
 }
 
 input#inlines:checked ~ .cards .card .description {

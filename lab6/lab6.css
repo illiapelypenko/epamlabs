@@ -21,6 +21,7 @@
     display: inline-block;
     position: relative;
     vertical-align: top;
+    margin: 5px;
 }
 
 .cake {
@@ -127,21 +128,50 @@ a:visited {
 }
 
 #radio-page-1:checked ~ .pages .page1 {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #radio-page-2:checked ~ .pages .page2 {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #radio-page-3:checked ~ .pages .page3 {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #radio-page-4:checked ~ .pages .page4 {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #radio-page-5:checked ~ .pages .page5 {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+}
+
+.tringle-left {
+    border-width: 40px 40px 40px 0;
+    border-color: transparent darkgray transparent transparent;
+}
+
+.tringle-right {
+    border-width: 40px 0 40px 40px;
+    border-color: transparent transparent transparent darkgray;
+}
+
+.triangle-hidden {
+    visibility: hidden;
 }
