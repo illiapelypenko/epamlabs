@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>lab7</title>
+        <link rel="stylesheet" href="./lab7.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Cakes & cupcakes</h1>
+            </header>
+            <aside id="cakechooser">
+                <input type="checkbox" id="pie" checked />
+                <label for="pie">
+                    Pie
+                </label>
+                <input type="checkbox" id="rulet" checked />
+                <label for="rulet">
+                    Rulet
+                </label>
+                <input type="checkbox" id="cheesecake" checked />
+
+                <label for="cheesecake">
+                    Cheesecake
+                </label>
+                <input type="checkbox" id="cupcake" checked />
+
+                <label for="cupcake">
+                    Cupcake
+                </label>
+                <input type="checkbox" id="cake" checked />
+
+                <label for="cake">
+                    Cake
+                </label>
+            </aside>
+            <main>
+                <div class="cakes">
+                    <div class="cake-container">
+                        <img
+                            src="./pictures/cheesecake.jpg"
+                            alt="cake"
+                            class="cheesecake"
+                        />
+                        <div class="cake-info">
+                            <h3>White cheesecake</h3>
+                            <p>Left: 10</p>
+                        </div>
+                    </div>
+                    <div class="cake-container grid-2">
+                        <img
+                            src="./pictures/cupcake-2.jpeg"
+                            alt="cake"
+                            class="cupcake"
+                        />
+                        <div class="cake-info">
+                            <h3>Pink cupcakes</h3>
+                            <p>Left: 80</p>
+                        </div>
+                    </div>
+                    <div class="cake-container">
+                        <img src="./pictures/pie1.jpg" alt="cake" class="pie" />
+                        <div class="cake-info">
+                            <h3>Bread-like-pie</h3>
+                            <p>Left: 4</p>
+                        </div>
+                    </div>
+                    <div class="cake-container">
+                        <img
+                            src="./pictures/rulet.jpg"
+                            alt="cake"
+                            class="rulet"
+                        />
+                        <div class="cake-info">
+                            <h3>Long rulet</h3>
+                            <p>Left: 6</p>
+                        </div>
+                    </div>
+                    <div class="cake-container">
+                        <img src="./pictures/pie2.jpg" alt="cake" class="pie" />
+                        <div class="cake-info">
+                            <h3>Some decent pie</h3>
+                            <p>Left: 2</p>
+                        </div>
+                    </div>
+                    <div class="cake-container grid-2">
+                        <img
+                            src="./pictures/ccake1.jpg"
+                            alt="cake"
+                            class="cake "
+                        />
+                        <div class="cake-info">
+                            <h3>Strange cake</h3>
+                            <p>Left: 40</p>
+                        </div>
+                    </div>
+                    <div class="cake-container">
+                        <img
+                            src="./pictures/cupcake2.jpg"
+                            alt="cake"
+                            class="cupcake"
+                        />
+                        <div class="cake-info">
+                            <h3>King's cupcake</h3>
+                            <p>Left: 0</p>
+                        </div>
+                    </div>
+                    <div class="cake-container  grid-3">
+                        <img
+                            src="./pictures/ccake2.jpg"
+                            alt="cake"
+                            class="cake"
+                        />
+                        <div class="cake-info">
+                            <h3>Bloody cake</h3>
+                            <p>Left: 1</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside id="rating">
+                <h2>Rating</h2>
+                <label for="isDecreasing">Decreasing</label>
+                <input type="checkbox" id="isDecreasing" />
+                <div class="rating-item high-rating-item">
+                    <p>Pie</p>
+                    <div id="pie-rating" class="rating-score high-rating"></div>
+                </div>
+                <div class="rating-item mid-rating-item">
+                    <p>Rulet</p>
+                    <div
+                        id="rulet-rating"
+                        class="rating-score mid-rating"
+                    ></div>
+                </div>
+                <div class="rating-item low-rating-item">
+                    <p>Cheesecake</p>
+                    <div
+                        id="cheesecake-rating"
+                        class="rating-score low-rating"
+                    ></div>
+                </div>
+                <div class="rating-item high-rating-item">
+                    <p>Cupcake</p>
+                    <div
+                        id="cupcake-rating"
+                        class="rating-score high-rating"
+                    ></div>
+                </div>
+                <div class="rating-item high-rating-item">
+                    <p>Cake</p>
+                    <div
+                        id="cake-rating"
+                        class="rating-score high-rating"
+                    ></div>
+                </div>
+            </aside>
+            <footer>
+                <p>@made by someone strange</p>
+            </footer>
+        </div>
+    </body>
+</html>

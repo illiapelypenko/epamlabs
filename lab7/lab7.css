@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px max-content 80px;
+    grid-template-areas: "h h h" "c m r" "f f f";
+    background: #214565;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column-gap: 10px;
+}
+
+header {
+    grid-area: h;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cakechooser {
+    grid-area: c;
+    display: flex;
+    flex-direction: column;
+}
+
+#cakechooser input {
+    display: none;
+}
+
+#cakechooser label {
+    padding: 10px;
+    text-align: center;
+    background: #183147;
+    margin: 0px 10px 10px 10px;
+    cursor: pointer;
+}
+
+#cakechooser input:checked + label {
+    background: #316795;
+}
+
+main {
+    grid-area: m;
+}
+
+main .cakes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+main .cakes img {
+    height: 150px;
+    width: 100%;
+    display: block;
+    border: 1px solid lightskyblue;
+}
+
+.grid-2 {
+    grid-column: span 2;
+}
+
+.grid-3 {
+    grid-column: span 3;
+}
+
+main .cakes .cake-container {
+    position: relative;
+}
+
+main .cakes .cake-container .cake-info {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+main .cakes .cake-container:hover .cake-info {
+    display: flex;
+}
+
+#rating {
+    grid-area: r;
+    background: #183147;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#rating h2 {
+    text-align: center;
+}
+
+#rating input {
+    align-self: flex-end;
+    margin: 10px 0px;
+}
+
+#rating label {
+    position: absolute;
+    top: 43px;
+    right: 30px;
+}
+
+#rating .rating-score {
+    height: 20px;
+}
+
+#rating .rating-item {
+    margin: 5px 0px;
+}
+
+#rating .rating-item {
+    order: 1;
+}
+
+#rating .rating-item .high-rating {
+    width: 100%;
+    background: linear-gradient(90deg, green, white);
+}
+
+#rating .rating-item .mid-rating {
+    width: 75%;
+    background: linear-gradient(90deg, yellow, white);
+}
+
+#rating .rating-item .low-rating {
+    width: 50%;
+    background: linear-gradient(90deg, red, white);
+}
+
+#rating #isDecreasing:checked ~ .rating-item.high-rating-item {
+    order: 0;
+}
+
+footer {
+    grid-area: f;
+    background: #183147;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+}
