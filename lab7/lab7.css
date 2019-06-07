@@ -8,7 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 80px max-content 80px;
-    grid-template-areas: "h h h" "c m r" "f f f";
+    grid-template-areas: "h h h" "m m r" "f f f";
     background: #214565;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,42 +21,64 @@ header {
     align-items: center;
     justify-content: center;
 }
-
+/* 
 #cakechooser {
     grid-area: c;
     display: flex;
     flex-direction: column;
-}
+} */
 
-#cakechooser input {
+main input {
     display: none;
 }
 
-#cakechooser label {
+main label {
     padding: 10px;
     text-align: center;
-    background: #183147;
+    background: #316795;
+
     margin: 0px 10px 10px 10px;
     cursor: pointer;
 }
 
-#cakechooser input:checked + label {
-    background: #316795;
+main input:checked + label {
+    background: #183147;
 }
 
 main {
     grid-area: m;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-areas:
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c"
+        ". c";
 }
 
 main .cakes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
+    grid-area: c;
+    padding-bottom: 10px;
 }
 
 main .cakes img {
-    height: 150px;
+    height: 175px;
     width: 100%;
     display: block;
     border: 1px solid lightskyblue;
@@ -149,7 +171,7 @@ main .cakes .cake-container:hover .cake-info {
 
 footer {
     grid-area: f;
-    background: #183147;
+    background: #0b1a27;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,4 +179,26 @@ footer {
     bottom: 0px;
     width: 100%;
     height: 80px;
+}
+
+/* filter */
+
+#pie:checked ~ .cakes .cake-container .pie {
+    filter: grayscale(200%);
+}
+
+#rulet:checked ~ .cakes .cake-container .rulet {
+    filter: grayscale(200%);
+}
+
+#cheesecake:checked ~ .cakes .cake-container .cheesecake {
+    filter: grayscale(200%);
+}
+
+#cupcake:checked ~ .cakes .cake-container .cupcake {
+    filter: grayscale(200%);
+}
+
+#cake:checked ~ .cakes .cake-container .cake {
+    filter: grayscale(200%);
 }
