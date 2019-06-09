@@ -16,100 +16,224 @@
 .cards {
     display: flex;
     justify-content: center;
-}
-
-.card0 {
-    background-color: transparent;
-    width: 250px;
-    height: 200px;
-    display: block;
-    z-index: 10;
-}
-
-.card-inner {
     position: relative;
-    width: 250px;
-    height: 200px;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 1s;
+}
+
+.card {
+    margin: 0px -50px;
+    display: block;
+    z-index: 11;
+    transform: rotateY(40deg);
+    transition: all 0.1s;
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
 img {
     width: 250px;
     height: 200px;
-    position: absolute;
-    backface-visibility: hidden;
     display: block;
 }
 
-.info {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    background: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-}
-
-.info h2 {
-    color: coral;
-    margin-bottom: 20px;
-}
-
 .container > input {
-    /* display: none; */
+    display: none;
     position: relative;
     top: -300px;
 }
 
-#input0:checked ~ .pages .card-inner {
-    transform: rotateY(180deg) scale(2, 2);
+/* z-indexes */
+
+#input6:checked ~ .cards .card7 {
+    z-index: 10;
 }
 
-.card {
-    margin: 0px -50px;
-    position: relative;
-    width: 250px;
-    height: 200px;
-    display: block;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+#input5:checked ~ .cards .card6 {
+    z-index: 10;
 }
 
-.cards-right {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transform: rotateY(-50deg);
-}
-
-.cards-left {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transform: rotateY(50deg);
-}
-
-.card1 {
+#input5:checked ~ .cards .card7 {
     z-index: 9;
 }
 
-.card2 {
+#input4:checked ~ .cards .card5 {
+    z-index: 10;
+}
+
+#input4:checked ~ .cards .card6 {
+    z-index: 9;
+}
+
+#input4:checked ~ .cards .card7 {
     z-index: 8;
 }
 
-.card3 {
+#input3:checked ~ .cards .card4 {
+    z-index: 9;
+}
+
+#input3:checked ~ .cards .card5 {
+    z-index: 8;
+}
+
+#input3:checked ~ .cards .card6 {
     z-index: 7;
 }
 
-.page {
-    display: none;
+#input3:checked ~ .cards .card7 {
+    z-index: 6;
 }
 
-#input4:checked ~ .pages .page-4 {
-    display: block;
+#input2:checked ~ .cards .card3 {
+    z-index: 10;
+}
+
+#input2:checked ~ .cards .card4 {
+    z-index: 9;
+}
+
+#input2:checked ~ .cards .card5 {
+    z-index: 8;
+}
+
+#input2:checked ~ .cards .card6 {
+    z-index: 7;
+}
+
+#input2:checked ~ .cards .card7 {
+    z-index: 6;
+}
+
+#input1:checked ~ .cards .card2 {
+    z-index: 10;
+}
+
+#input1:checked ~ .cards .card3 {
+    z-index: 9;
+}
+
+#input1:checked ~ .cards .card4 {
+    z-index: 8;
+}
+
+#input1:checked ~ .cards .card5 {
+    z-index: 7;
+}
+
+#input1:checked ~ .cards .card6 {
+    z-index: 6;
+}
+
+#input1:checked ~ .cards .card7 {
+    z-index: 5;
+}
+
+/* positioning */
+
+#input1:checked ~ .cards {
+    left: 450px;
+}
+
+#input2:checked ~ .cards {
+    left: 300px;
+}
+
+#input3:checked ~ .cards {
+    left: 150px;
+}
+
+#input4:checked ~ .cards {
+    left: 0px;
+}
+
+#input5:checked ~ .cards {
+    left: -150px;
+}
+
+#input6:checked ~ .cards {
+    left: -300px;
+}
+
+#input7:checked ~ .cards {
+    left: -450px;
+}
+
+/* -------------- */
+
+#input4:checked ~ .cards .card4 {
+    transform: rotateY(0deg);
+}
+
+#input4:checked ~ .cards .card4 ~ .card {
+    transform: rotateY(-40deg);
+}
+
+#input5:checked ~ .cards .card5 {
+    transform: rotateY(0deg);
+}
+
+#input5:checked ~ .cards .card5 ~ .card {
+    transform: rotateY(-40deg);
+}
+
+#input6:checked ~ .cards .card6 {
+    transform: rotateY(0deg);
+}
+
+#input6:checked ~ .cards .card6 ~ .card {
+    transform: rotateY(-40deg);
+}
+
+#input7:checked ~ .cards .card7 {
+    transform: rotateY(0deg);
+}
+
+#input7:checked ~ .cards .card7 ~ .card {
+    transform: rotateY(-40deg);
+}
+
+#input8:checked ~ .cards .card8 {
+    transform: rotateY(0deg);
+}
+
+#input8:checked ~ .cards .card8 ~ .card {
+    transform: rotateY(-40deg);
+}
+
+#input3:checked ~ .cards .card3 {
+    transform: rotateY(0deg);
+}
+
+#input3:checked ~ .cards .card3 ~ .card {
+    transform: rotateY(-40deg);
+}
+
+#input2:checked ~ .cards .card2 {
+    transform: rotateY(0deg);
+}
+
+#input2:checked ~ .cards .card2 ~ .card {
+    transform: rotateY(-40deg);
+}
+
+#input1:checked ~ .cards .card1 {
+    transform: rotateY(0deg);
+}
+
+#input1:checked ~ .cards .card1 ~ .card {
+    transform: rotateY(-40deg);
+}
+
+/* h1 */
+h1 {
+    position: absolute;
+    width: 100vw;
+    top: 100px;
+    text-align: center;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("./pictures/giphy.gif");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position: center;
 }
