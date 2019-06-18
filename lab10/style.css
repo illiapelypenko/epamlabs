@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header {
+    background: #2B3E50;
+    padding: 24px 16px;
+    color: #fff;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.5;
+    position: fixed;
+    width: 100%;
+}
+
+.header__container {
+    max-width: 1140px;
+    padding: 0px 15px;
+    margin: auto;
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    font-size: 28px;
+    padding: 5px 0px;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__main .header__item {
+    font-size: 16px;
+    padding: 16px;
+    cursor: pointer;
+    margin: 0px 4px;
+}
+
+.header__item:hover {
+    color: #1ABC9C;
+}
+
+.header__menu {
+    font-size: 12.8px;
+    padding: 12.8px;
+    background: #1ABC9C;
+    border-radius: 8px;
+    display: none;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.header__falling-menu .header__item {
+    font-size: 16px;
+    padding: 16px 0px;
+    cursor: pointer;
+    margin: 0px 0px;
+}
+
+.header__falling-menu {
+    display: none;
+    transition: 1s;
+}
+
+@media (max-width: 991px) {
+    .header__logo {
+        font-size: 20px;
+        padding: 5px 0px;
+    }
+
+    .header__menu {
+        display: flex;
+    }
+
+    .header__main .header__item {
+        display: none;
+    }
+
+    .header__falling-menu {
+        display: block;
+    }
+}
+
+.header__bars {
+    height: 12.8px;
+    width: 12.8px;
+}
+
+#header__menu-input:not(:checked)~.header__falling-menu {
+    display: none;
+}
