@@ -88,6 +88,16 @@ header {
 }
 
 @media (max-width: 991px) {
+    header {
+        padding: 16px 16px;
+    }
+
+    .header__container {
+        max-width: 1140px;
+        padding: 0px 0px;
+        margin: auto;
+    }
+
     .header__logo {
         font-size: 20px;
         padding: 5px 0px;
