@@ -5,11 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Lab10</title>
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./styles/header.css" />
+        <link rel="stylesheet" href="./styles/start-bootstrap.css" />
+        <link rel="stylesheet" href="./styles/portfolio.css" />
+        <link rel="stylesheet" href="./styles/about.css" />
+        <link rel="stylesheet" href="./styles/page-top-link.css" />
+        <link rel="stylesheet" href="./styles/contact.css" />
+        <link rel="stylesheet" href="./styles/style.css" />
     </head>
     <body>
         <header>
-            <div class="header__container">
+            <div class="container">
                 <div class="header__main">
                     <div class="header__logo">
                         START BOOTSTRAP
@@ -55,5 +61,193 @@
                 </ul>
             </div>
         </header>
+        <main id="main">
+            <section class="start-bootstrap">
+                <div class="container">
+                    <img
+                        src="./pics/avatar.svg"
+                        alt="avatar"
+                        class="start-bootstrap__avatar"
+                    />
+                    <h1>START BOOTSTRAP</h1>
+                    <div class="divider">
+                        <div class="divider__line divider__line--left"></div>
+                        <svg
+                            viewBox="0 0 576 512"
+                            class="divider__main-element"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                            ></path>
+                        </svg>
+                        <div class="divider__line divider__line--right"></div>
+                    </div>
+                    <p>
+                        Graphic Artist - Web Designer - Illustrator
+                    </p>
+                </div>
+            </section>
+            <section class="portfolio">
+                <div class="container">
+                    <div class="section-name section--dark">
+                        <h2>PORTFOLIO</h2>
+                        <div class="divider">
+                            <div
+                                class="divider__line divider__line--left"
+                            ></div>
+                            <svg
+                                viewBox="0 0 576 512"
+                                class="divider__main-element"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                ></path>
+                            </svg>
+                            <div
+                                class="divider__line divider__line--right"
+                            ></div>
+                        </div>
+                    </div>
+                    <div class="portfolio__cards">
+                        <div class="portfolio__card">
+                            <img src="./pics/cabin.png" alt="cabin" />
+                        </div>
+                        <div class="portfolio__card">
+                            <img src="./pics/cake.png" alt="cake" />
+                        </div>
+                        <div class="portfolio__card">
+                            <img src="./pics/circus.png" alt="circus" />
+                        </div>
+                        <div class="portfolio__card">
+                            <img src="./pics/game.png" alt="game" />
+                        </div>
+                        <div class="portfolio__card">
+                            <img src="./pics/safe.png" alt="safe" />
+                        </div>
+                        <div class="portfolio__card">
+                            <img src="./pics/submarine.png" alt="submarine" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container">
+                    <div class="section-name">
+                        <h2>ABOUT</h2>
+                        <div class="divider">
+                            <div
+                                class="divider__line divider__line--left"
+                            ></div>
+                            <svg
+                                viewBox="0 0 576 512"
+                                class="divider__main-element"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                ></path>
+                            </svg>
+                            <div
+                                class="divider__line divider__line--right"
+                            ></div>
+                        </div>
+                    </div>
+                    <p>
+                        Freelancer is a free bootstrap theme created by Start
+                        Bootstrap. The download includes the complete source
+                        files including HTML, CSS, and JavaScript as well as
+                        optional SASS stylesheets for easy customization. <br />
+                        You can create your own custom avatar for the masthead,
+                        change the icon in the dividers, and add your email
+                        address to the contact form to make it fully functional!
+                    </p>
+                </div>
+                <div class="btn btn--stroke">
+                    <svg viewBox="0 0 512 512">
+                        <path
+                            fill="currentColor"
+                            d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"
+                        ></path>
+                    </svg>
+                    &nbsp; Free Download!
+                </div>
+            </section>
+            <section class="contact-me">
+                <div class="container">
+                    <div class="section-name section--dark">
+                        <h2>CONTACT ME</h2>
+                        <div class="divider">
+                            <div
+                                class="divider__line divider__line--left"
+                            ></div>
+                            <svg
+                                viewBox="0 0 576 512"
+                                class="divider__main-element"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+                                ></path>
+                            </svg>
+                            <div
+                                class="divider__line divider__line--right"
+                            ></div>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="form-input">
+                            <input
+                                type="text"
+                                name="text"
+                                placeholder="Name"
+                                required
+                            />
+                        </div>
+                        <div class="form-input">
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email Address"
+                                required
+                            />
+                        </div>
+                        <div class="form-input">
+                            <input
+                                type="number"
+                                name="phone"
+                                placeholder="Phone Number"
+                            />
+                        </div>
+                        <div class="form-input">
+                            <textarea
+                                name="message"
+                                rows="5"
+                                placeholder="Message"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="submit">
+                            <input
+                                type="submit"
+                                value="Send"
+                                class="btn btn--fill"
+                                name="submit"
+                            />
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <a class="page-top-link" href="#main">
+            <svg viewBox="0 0 448 512">
+                <path
+                    fill="currentColor"
+                    d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"
+                ></path>
+            </svg>
+        </a>
     </body>
 </html>

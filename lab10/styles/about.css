@@ -1,0 +1,23 @@
+.about {
+    background: #1ABC9C;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 100px;
+}
+
+.about p {
+    column-count: 2;
+    column-gap: 50px;
+    margin: 0px 200px 50px 200px;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 991px) {
+    .about p {
+        column-count: 1;
+        column-gap: 50px;
+        margin: 30px 0px 50px 30px;
+        line-height: 1.5;
+    }
+}

@@ -1,0 +1,32 @@
+.start-bootstrap {
+    padding: 200px 0px 96px 0px;
+    background: #1ABC9C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.start-bootstrap__avatar {
+    width: 240px;
+    margin-bottom: 48px;
+}
+
+.start-bootstrap h1 {
+    font-size: 64px;
+}
+
+.start-bootstrap p {
+    font-size: 24px;
+}
+
+@media (max-width: 991px) {
+    .start-bootstrap h1 {
+        font-size: 44px;
+    }
+
+    .start-bootstrap p {
+        font-size: 20px;
+    }
+}
