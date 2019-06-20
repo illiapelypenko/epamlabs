@@ -46,11 +46,11 @@
 
     .contact-me form input,
     .contact-me form textarea {
-        outline: none;
-        font-size: 25px;
-        padding: 6px 0px;
         width: auto;
-        line-height: 1.5;
+    }
+
+    .form-input {
+        width: 100%;
     }
 
 
