@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>QUnit Example</title>
+    <link rel="stylesheet" href="_lib/qunit-2.9.2.css">
+    <style>
+        .selected{
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>My Foo Tests</h1>
+    <h2 id="banner"></h2>
+    <ol id="tests">
+        <li>item 0</li>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ol>
+    <div id="results"></div>
+    <div id="main"></div>
+
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+    <script src="_lib/qunit-2.9.2.js"></script>
+    <script src="my_lib.js"></script>
+    <script src="tests.js"></script>
+
+</body>
+
+</html>
