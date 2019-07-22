@@ -1,0 +1,41 @@
+﻿<!--
+Вам нужно выбрать средствами библиотеки JQuery неактивные кнопки и вписать в теги span, 
+которые идут сразу же после этих кнопок текст “This button is disabled”.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(() => {
+        $("button[disabled='disabled'] + span").text("This button is disabled");
+      });
+    </script>
+    <style>
+      span {
+        color: blue;
+        font-weight: bold;
+      }
+
+      button {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button disabled="disabled">First</button>
+      - <span></span>
+    </div>
+    <div>
+      <button>Second</button>
+      - <span></span>
+    </div>
+    <div>
+      <button disabled="disabled">Third</button>
+      - <span></span>
+    </div>
+  </body>
+</html>

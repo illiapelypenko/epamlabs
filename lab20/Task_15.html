@@ -1,0 +1,32 @@
+﻿<!--
+Вам нужно создать пустой параграф и кнопку. После нажатия кнопки должна срабатывать функция, 
+которая запустит счетчик и каждую секунду будет отображать в параграфе новое число. 
+Счетчик должен начинаться с нуля. Как только счетчик будет равен 10, выполнение вывода прекращается. 
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>15</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(() => {
+        $("button").click(() => {
+          let count = 0;
+          function fun() {
+            if (count >= 10) {
+              clearInterval(fun);
+            } else {
+              $("p").html(++count);
+            }
+          }
+          setInterval(fun, 1000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button>Button</button>
+    <p></p>
+  </body>
+</html>

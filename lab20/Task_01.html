@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>lab20_1</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(() => {
+        $("form").submit(e => {
+          e.preventDefault();
+          $($("input").val()).css("background", "yellow");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!--    
+	1)	Скачайте и подключите к данному документу библиотеку jQuery;
+    2)	Создайте на странице текстовое поле и кнопку.
+    3)	Создайте произвольное количество элементов на странице с различными уровнями вложенности.
+    4)	Цель: в текстовое поле вводим селектор и нажимаем на кнопку. Элемент, который соответвует селектору, меняет цвет. 
+    -->
+    <form>
+      <input type="text" />
+      <button type="submit">Submit</button>
+    </form>
+    <main>
+      <section id="sec1">
+        <h2>Header1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, odio.
+        </p>
+      </section>
+      <section id="sec2">
+        <h2>Header2</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+          ducimus, nesciunt iure optio nihil dolorem.
+        </p>
+      </section>
+      <section id="sec2">
+        <h2>Header3</h2>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

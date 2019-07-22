@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>14</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(() => {
+        $("button").click(e => {
+          $("ul").append("<li>Пункт</li>");
+        });
+        $("ul").click(e => {
+          if (e.target.tagName === "LI") {
+            e.target.innerText += "!";
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h2>Завдання 14.</h2>
+    <p>
+      Дан ul, в ньому кілька li. Під ul зробіть кнопку, після натискання на яку
+      в кінець ul буде додаватися новий li з текстом 'пункт'. Зробіть так, щоб
+      при кліці на кожен li, йому в кінець додавався '!'. Це повинно працювати і
+      для доданих li. Завдання вирішите за допомогою делегування (тобто подія
+      має бути на ul).
+    </p>
+    <ul></ul>
+    <button>Button</button>
+  </body>
+</html>

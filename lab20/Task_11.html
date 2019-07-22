@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>11</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(() => {
+        $("a").mouseenter(e => (e.target.innerText += `(${e.target.href})`));
+      });
+    </script>
+  </head>
+
+  <body>
+    <h2>Завдання 11.</h2>
+    <p>
+      Потрібно додати до всіх посилань на сторінці наступну подію - при
+      наведенні на посилання в кінець її тексту дописується її href в круглих
+      дужках.
+    </p>
+    <a href="google.com">Google</a>
+    <a href="google.com">Twitter</a>
+    <a href="google.com">Facrbook</a>
+  </body>
+</html>

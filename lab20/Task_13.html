@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>13</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(() => {
+        $("p").click(e => {
+          e.target.innerText += "!";
+          $("p").unbind();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h2>Завдання 13.</h2>
+    <p>
+      Потрібно додати до всіх абзаців на сторінці наступну подію - при першому
+      кліку на абзац, в кінець його тексту додавався '!', але тільки за першим
+      кліком.
+    </p>
+  </body>
+</html>
